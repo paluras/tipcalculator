@@ -4,9 +4,9 @@ import './App.css'
 
 
 function App() {
-  const [count, setCount] = useState<any | null>(0)
-  const [persons, setPersons] = useState<any | null>(1)
-  const [procent, setProcent] = useState<any | null>(1)
+  const [count, setCount] = useState<any | null>("")
+  const [persons, setPersons] = useState<any | null>("")
+  const [procent, setProcent] = useState<any | null>("")
   const [customProcent, setCustomProcent] = useState<any | null>("")
   
 

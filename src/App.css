@@ -1,6 +1,7 @@
 *{
   font-family: 'Space Mono', monospace;
   margin: 0px;
+  overflow: hidden;
 }
 #root{
   display: grid;
