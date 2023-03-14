@@ -12,7 +12,7 @@
 }
 .App{
   display: flex;
-  max-width: 70vw;
+  max-width: 60vw;
   max-height: 40vh;
   background-color: white;
   border-radius: 20px;
@@ -102,7 +102,7 @@ div{
   align-items: center;
   justify-content: end;
   font-size: 2rem;
-  width: 10vw;
+  width: 20vw;
   color: #32b4a2;
 }
 .bill-calc button{
