@@ -46,7 +46,7 @@
 input{
   border: none;
   background-color: #f3f8fa;
-  width: 100%;
+  width:98%;
   height: 32px;
   border-radius: 5px;
   text-align:right;
@@ -98,7 +98,11 @@ div{
   font-size: 12px;
 }
 .right{
-  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 2rem;
+  width: 10vw;
   color: #32b4a2;
 }
 .bill-calc button{
