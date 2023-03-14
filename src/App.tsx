@@ -5,8 +5,8 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState<any | null>("")
-  const [persons, setPersons] = useState<any | null>("")
-  const [procent, setProcent] = useState<any | null>("")
+  const [persons, setPersons] = useState<any | null>(1)
+  const [procent, setProcent] = useState<any | null>(51)
   const [customProcent, setCustomProcent] = useState<any | null>("")
   
 
@@ -28,7 +28,7 @@ function listenCustom(event:ChangeEvent<HTMLInputElement>){
 
 const handleClick = () => {
   setCount(0);
-  setPersons(0)
+  setPersons(1)
   setCustomProcent("Custom")
 };
 
@@ -77,7 +77,7 @@ const calc : number = (count / 100) * procent ;
                       <div className="tip-bold">Tip Amount</div>
                       <div className="person">/person</div>
                     </div>
-                    <div className="right">{(calc / persons).toFixed(2)}</div>
+                    <div className="right">{(calc  / persons).toFixed(2)}</div>
                   </div>
                   <div className="tip-amount">
                     <div className="left">
