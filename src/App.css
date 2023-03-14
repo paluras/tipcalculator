@@ -1,0 +1,98 @@
+*{
+  font-family: 'Space Mono', monospace;
+  margin: 0px;
+}
+#root{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #c4e4e7;
+}
+.App{
+  display: flex;
+  width: 70vw;
+  height: 40vh;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+}
+.left-main{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 40px; 
+}
+.left-main button{
+  border: none;
+  background-color: #00474b;
+  padding: 0px;
+  height: 30px;
+  border-radius: 5px;
+  color: white;
+}
+.bill-sum input{
+  background-position:10px ;
+  background-image: url("/src/assets/icon-dollar.svg");
+  background-repeat: no-repeat; 
+}
+.nr-ppl input {
+  background-position:10px ;
+  background-image: url("/src/assets/icon-person.svg");
+  background-repeat: no-repeat; 
+}
+input{
+  border: none;
+  background-color: #f3f8fa;
+  width: 100%;
+  height: 32px;
+  border-radius: 5px;
+  text-align:right;
+  font-size: 2.5vh; 
+}
+.buttons-calc{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+div{
+  color: #8a9291;
+  padding: 0px 0px 10px 0px;
+}
+.custom-btn input{
+  width: 100%;
+  text-align: center;
+  color:#8a9291;
+}
+.bill-calc{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-around;
+  background-color: #00474b;
+  border-radius: 10px;
+  padding: 30px;
+}
+.tip-amount{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tip-bold{
+  color: white;
+}
+.person{
+  font-size: 12px;
+}
+.right{
+  font-size: 28px;
+  color: #32b4a2;
+}
+.bill-calc button{
+  background-color: #32b4a2;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+}
+
