@@ -11,8 +11,8 @@
 }
 .App{
   display: flex;
-  width: 70vw;
-  height: 40vh;
+  max-width: 70vw;
+  max-height: 40vh;
   background-color: white;
   border-radius: 20px;
   padding: 30px;
@@ -49,7 +49,17 @@ input{
   height: 32px;
   border-radius: 5px;
   text-align:right;
-  font-size: 2.5vh; 
+  font-size: 2.5vh;
+ 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 10px;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }
 .buttons-calc{
   display: grid;
@@ -62,8 +72,9 @@ div{
 }
 .custom-btn input{
   width: 100%;
-  text-align: center;
+  text-align: end;
   color:#8a9291;
+  font-size: 2vh;
 }
 .bill-calc{
   display: flex;
@@ -95,4 +106,37 @@ div{
   border: none;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  
+    .App{
+      flex-direction: column;
+      width:100%;
+      max-height: 100vh;
+      padding: 20px;
+      align-items: center;
+    }
+
+    .left-main{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0px; 
+    }
+
+    .bill-calc{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 100%;
+      
+      justify-content: space-around;
+      background-color: #00474b;
+      border-radius: 10px;
+    }
+    .buttons-calc{
+      grid-template-columns: 1fr 1fr ;
+    }
+} 
 
