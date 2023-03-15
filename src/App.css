@@ -3,6 +3,11 @@
   margin: 0px;
   overflow: hidden;
 }
+
+.buttons-calc .custom-btn {
+  background-color: transparent;
+  
+}
 #root{
   display: grid;
   justify-content: center;
@@ -25,6 +30,8 @@
   justify-content: space-around;
   padding-right: 40px; 
 }
+
+
 .left-main button{
   border: none;
   background-color: #00474b;
@@ -33,6 +40,11 @@
   border-radius: 5px;
   color: white;
 }
+
+.left-main button:focus{
+  background-color: #178288;
+}
+
 .bill-sum input{
   background-position:10px ;
   background-image: url("/src/assets/icon-dollar.svg");
@@ -52,6 +64,10 @@ input{
   text-align:right;
   font-size: 2.5vh;
  
+}
+ .custom-btn {
+  background-color: transparent;
+  border: 0px;
 }
 
 input::-webkit-outer-spin-button,
@@ -73,10 +89,12 @@ div{
 }
 .custom-btn input{
   width: 100%;
-  text-align: end;
+  text-align: center;
   color:#8a9291;
-  font-size: 2vh;
+  font-size: 2vh; 
 }
+
+
 .bill-calc{
   display: flex;
   flex-direction: column;
@@ -144,4 +162,18 @@ div{
       grid-template-columns: 1fr 1fr ;
     }
 } 
+
+@media screen and (max-width: 426px){
+ 
+ #root{
+  width: 100%;
+  padding: 0px;
+ }
+  .App{
+  max-width: 80vw;
+ }
+ .right{
+  font-size: 4vh;
+ }
+}
 
